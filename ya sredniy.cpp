@@ -3,7 +3,7 @@
 
 int main()
 {
-    Students student;
+    humans human;
 
     std::string name;
     std::string last_name;
@@ -14,8 +14,8 @@ int main()
     std::cout<<"Last name: ";
     getline(std::cin, last_name);
 
-    student.set_name(name);
-    student.set_last_name(last_name);
+    human.set_name(name);
+    human.set_last_name(last_name);
 
     int scores[17];
     int sum=0;
@@ -26,12 +26,12 @@ int main()
         sum += scores[i];
     }
 
-    student.set_scores(scores);
+    human.set_scores(scores);
     float average_ball=sum/17.0;
-    student.set_average_ball(average_ball);
-    std::cout << "Average ball for "<<student.get_name()<< " "
-         <<student.get_last_name()<< " is "
-         <<student.get_average_ball()<<std::endl;
+    human.set_average_ball(average_ball);
+    std::cout << "Average ball for "<<human.get_name()<< " "
+         <<human.get_last_name()<< " is "
+         <<human.get_average_ball()<<std::endl;
     system("pause");
 
     return 0;

@@ -1,27 +1,27 @@
 #include <string>
 
-class Students {
+class humans {
     public:
-        void set_name(std::string student_name)
+        void set_name(std::string humans_name)
         {
-            name = student_name;
+            name = humans_name;
         }
         std::string get_name()
         {
             return name;
         }
-        void set_last_name(std::string student_last_name)
+        void set_last_name(std::string humans_last_name)
         {
-            last_name = student_last_name;
+            last_name = humans_last_name;
         }
         std::string get_last_name()
         {
             return last_name;
         }
-        void set_scores(int student_scores[])
+        void set_scores(int humans_scores[])
         {
             for (int i = 0; i<17; ++i) {
-                scores[i] = student_scores[i];
+                scores[i] = humans_scores[i];
             }
         }
         void set_average_ball(float ball)
